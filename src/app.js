@@ -5,7 +5,7 @@ const utils = require("./utils/forecast");
 const weatherCheck = require("./utils/forecast");
 const forecast = require("./utils/forecast");
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Define Path
 const publicDirectory = path.join(__dirname, "../public");
